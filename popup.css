@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('BG1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header img#long-logo {
+    width: 400px; /* Adjust based on your logo size */
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+    .button-group.left {
+        margin-right: 20px;
+    }
+
+    .button-group.right {
+        margin-left: 20px;
+    }
+
+.action-btn, .link-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+}
+
+    .action-btn:hover, .link-btn:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+    }
+
+img#mascot {
+    width: 100px; /* Adjust if necessary */
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    header img#long-logo {
+        width: 250px; /* Smaller logo for smaller screens */
+    }
+
+    .content {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .button-group {
+        margin: 10px 0; /* Reduce spacing around button groups for tighter spaces */
+    }
+
+    img#mascot {
+        width: 80px; /* Smaller mascot image */
+    }
+}
+
+/* Styles for settings slider */
+input[type="range"] {
+    -webkit-appearance: none; /* Removes default webkit styles */
+    width: 100%; /* Full-width

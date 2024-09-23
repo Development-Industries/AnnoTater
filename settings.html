@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="popup.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <title>Settings</title>
+</head>
+<body>
+    <h1>Settings</h1>
+    <form id="settings-form">
+        <label for="highlight-color">Highlight Color:</label>
+        <input type="color" id="highlight-color" name="highlight-color">
+
+        <label for="comment-size">Comment Font Size:</label>
+        <input type="number" id="comment-size" name="comment-size" min="10" max="20">
+
+        <button type="submit">Save Settings</button>
+        <label for="background-image">Background Image:</label>
+        <select id="background-image">
+            <option value="BG1.png">Farm 1</option>
+            <option value="BG2.png">Farm 2</option>
+            <!-- Add options for each background image -->
+        </select>
+
+    </form>
+    <a href="popup.html" class="link-btn">Back to the Farm</a>
+    <script src="settings.js"></script>
+</body>
+</html>

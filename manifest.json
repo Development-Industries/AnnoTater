@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "AnnoTater",
+  "version": "1.0",
+  "description": "Interact with web content through annotations, screenshots, and more.",
+  "icons": {
+    "16": "logo16.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "content.js" ],
+      "css": [ "styles.css" ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo16.png",
+      "48": "logo48.png",
+      "128": "logo128.png" // Ensure you use the correct file if you meant to use a different one for the 128 size
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "BG1.png", "BG2.png", "BG3.png", "Highlight.png", "Underline.png", "Camera.png", "Comment.png", "Tater.png" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ]
+}
+
